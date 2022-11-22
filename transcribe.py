@@ -28,7 +28,8 @@ def get_transcribe_id(token,url):
   '''
   endpoint = "https://api.assemblyai.com/v2/transcript"
   json = {
-    "audio_url": url
+    "audio_url": url,
+    "language_code": "es"
   }
   headers = {
     "authorization": token,
